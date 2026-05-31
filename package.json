@@ -1,0 +1,47 @@
+{
+    "name": "vid-scaffold",
+    "version": "1.0.0",
+    "description": "Scaffold video editing project directory structures interactively",
+    "bin": {
+        "vid-scaffold": "./dist/bin-ts/cli.js"
+    },
+    "main": "./dist/src-ts/index.js",
+    "types": "./dist/src-ts/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "start": "node dist/bin-ts/cli.js",
+        "prepublishOnly": "npm run build",
+        "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+    },
+    "keywords": [
+        "video",
+        "editing",
+        "scaffold",
+        "kdenlive",
+        "davinci",
+        "premiere",
+        "project",
+        "structure",
+        "cli"
+    ],
+    "author": "",
+    "license": "MIT",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "@inquirer/prompts": "^7.5.2",
+        "chalk": "^4.1.2",
+        "fs-extra": "^11.3.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^22.0.0",
+        "prettier": "^3.8.3",
+        "typescript": "^6.0.3"
+    }
+}

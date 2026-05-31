@@ -1,0 +1,23 @@
+# Source TypeScript — consumers only need the compiled dist/
+src-ts/
+bin-ts/
+src/
+
+# Config and dev files
+tsconfig.json
+.gitignore
+*.tsbuildinfo
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Tests (if added later)
+__tests__/
+*.test.ts
+*.spec.ts

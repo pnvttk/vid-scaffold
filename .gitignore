@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# TypeScript build output — compiled files go to dist/
+# dist/ is committed for local testing but excluded from git
+# (npm publish uses "files": ["dist"] to include it in the package)
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# TypeScript cache
+*.tsbuildinfo
